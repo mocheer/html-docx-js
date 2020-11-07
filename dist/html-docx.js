@@ -13083,8 +13083,8 @@ module.exports = {
           };
       }
     })(), {
-      margins: documentOptions.margins
-    });
+      margins: documentOptions.margins,
+    }, documentOptions.pageOptions);
     return documentTemplate(templateData);
   },
   addFiles: function(zip, htmlSource, documentOptions) {

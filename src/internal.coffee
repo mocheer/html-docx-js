@@ -29,7 +29,9 @@ module.exports =
         when 'landscape' then height: 12240, width: 15840, orient: 'landscape'
         else width: 12240, height: 15840, orient: 'portrait'
     ,
-      margins: documentOptions.margins
+      margins: documentOptions.margins,
+      documentOptions.options
+
 
     documentTemplate(templateData)
 
